@@ -1,5 +1,4 @@
 
-![kairos header](https://github.com/user-attachments/assets/c0122ddc-01e0-49b1-b482-8e34070af368)
 ![kairos_logo](https://github.com/user-attachments/assets/db0f2a37-6fb3-4d18-82d4-9e062c8cf106)
 
 
@@ -18,14 +17,16 @@ Direcionado ao estabelecimento Kairós Pizzaria, busca atender as necessidades d
 
 - Cardápio = Relacionado às opções de consumo do estabelecimento, apresenta submenus organizados para facilitar a navegação, direcionando o cliente a categorias específicas do cardápio, como pizzas, lanches e bebidas. Dessa forma, proporciona uma experiência intuitiva e ágil na escolha dos itens desejados.
 
-- Avaliações = Relacionado às opções de consumo do estabelecimento, apresenta submenus organizados para facilitar a navegação, direcionando o cliente a categorias específicas do cardápio, como pizzas, lanches e bebidas. Dessa forma, proporciona uma experiência intuitiva e ágil na escolha dos itens desejados.
+- Avaliações (não funcional) = Relacionado às avaliações dos consumidores em relação ao estabelecimento no geral.
 
 - Sobre nós = Seção dedicada à história e trajetória do estabelecimento, destacando sua origem, valores e evolução ao longo do tempo. Esse espaço permite ao consumidor conhecer mais sobre a essência da marca, criando conexão e fortalecendo a identidade do negócio.
 
 - Rodapé = Inclui informações essenciais de contato do estabelecimento, como endereço, telefone e redes sociais, facilitando a comunicação e o acesso dos clientes. Dessa forma, oferece praticidade e proximidade, permitindo que os consumidores encontrem rapidamente os canais oficiais para dúvidas, pedidos ou interações.
 
+- Acesso para administradores (não funcional) = Apresenta uma tela de login dedicada para funcionários, possibilitando a administração do website.
+
 ## Não Funcionais
 
 - Sistema de feedback
-- Login para administradores
+- Acesso para administradores
 - Resposividade em dispositivos móveis
