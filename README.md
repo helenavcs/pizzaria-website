@@ -6,8 +6,8 @@
 
 # Kairós Pizzaria
 
-texto aqui
-
+Website criado para fins didáticos.
+Direcionado ao estabelecimento Kairós Pizzaria, busca atender as necessidades digitais dos consumidores e funcionários.
 
 
 ![paginicial](https://github.com/user-attachments/assets/9ac6a3bb-5cc9-4005-95d7-d8ef9461d072)
