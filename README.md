@@ -10,8 +10,7 @@ Uma breve descrição sobre o que esse projeto faz e para quem ele é
 
 
 
-![App Screenshot](add link aqui)
-
+![paginicial](https://github.com/user-attachments/assets/9ac6a3bb-5cc9-4005-95d7-d8ef9461d072)
 
 ## Funcionalidades
 
