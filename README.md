@@ -9,7 +9,6 @@
 Uma breve descrição sobre o que esse projeto faz e para quem ele é
 
 
-## Screenshots
 
 ![App Screenshot](add link aqui)
 
