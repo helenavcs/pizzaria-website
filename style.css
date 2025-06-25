@@ -1,0 +1,548 @@
+
+/* corpo da página */
+body{
+    /* imagem de fundo do site */
+    background-image: url(img/background.png);
+
+    /* tamanho da imagem e repetição */
+    background-size: 30%;
+    background-repeat: repeat;
+
+    /* muda a margem da página */
+    margin: auto;
+    overflow-x: hidden;
+
+    display: block;
+}
+
+/* essa é a "parte de cima" da página, que está sendo
+delimitada pelo fundo de madeira. */
+.paginacima{
+    /* fundo de madeira */
+   /* background-color: blueviolet; */
+    background-image: url(img/woodbg.png);
+    color:aliceblue;
+    max-width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+/* o menu vermelho que fica no topo da página */
+.menu{
+    
+    /* bandeira vermelha do menu */
+    background-image: url(img/redheader.png);
+    
+    /* posição da bandeira */
+    background-size: auto;
+    display: flex;
+    z-index: 10;
+}
+
+/* estilo geral da div onde os botões estão */
+.menubotoes{
+
+    /* fonte dos botões */
+    font-family: Red Hat Display;
+   
+    /* decoração dos botões */
+    cursor: pointer;
+    
+    /* posição dos botões na barra de navegação */
+    display: inline-block, flex;
+    padding: 10px 30px;
+    position: relative;
+    top: -12px; /*ajusta a altura dos botões*/
+    z-index: 10;
+}
+
+/* "barra" de navegação, que na verdade é 
+para os botões ficarem na horizontal*/
+nav{
+    position: relative;
+    top: -25px;
+    z-index: 10;
+}
+
+/* "barra de navegação" e suas configurações */
+nav ul{
+    list-style: none;
+    position: relative;
+    top: -25px;
+    z-index: 10;
+}
+
+/* lista que forma os botões, para eles ficarem lado a lado na horizontal */
+nav ul li{
+    display: inline-block;
+    position: flex;
+    margin-right: 20px;
+}
+
+/* estilo do texto dos botões*/
+nav ul li a{
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    transition: 0.6s, transform 0.6s;
+}
+
+/* animação quando o mouse é passado sobre os botões */
+.nav ul li a:hover{
+    transform: scale(1.1);
+}
+
+/* botões da barra vermelha */
+.botao{
+    padding: 3px 1px;
+    border: solid 1px;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    position: relative;
+    top: -85px;
+    left: 600px;
+}
+
+/* animação dos botões */
+.botao:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+
+.botao:hover a{
+   color: rgb(148, 1, 1); 
+}
+
+.botao:active {
+    animation: pulsar 0.
+}
+
+/* a seguir são todas as imagens posicionadas */
+.imagens{
+    display: block;
+    z-index: 0; /* faz com que as imagens fiquem lado a lado */
+}
+
+/* pizza da esquerda */
+.pizza1{
+    position: relative;
+    z-index: 0;
+    left: -180px;
+    top: -90px;
+    width: 440px;
+    height: 420px;
+}
+
+/* letreiro "pizzas a moda da casa" */
+.letreiro{
+  position: absolute;
+  left: 280px;
+  top: 140px;
+  width: 420px;
+  height: 260px;
+  z-index: 0;
+}
+
+/* ingredientes atrás da pizza da direita */
+.ingredientes{
+  position: absolute;
+  left: 1050px;
+  top: 130px;
+  width: 450px;
+  height: 530px;
+  z-index: 0;
+}
+
+/* pizza da direita */
+.pizza2{
+  position: fixed;
+  left: 820px;
+  top: 150px;
+  width: 470px;
+  height: 450px;
+  z-index: 0;
+}
+
+/* o botão "clique aqui" em vermelho */
+.botao_cliqueaq{
+  /* estilo do botão */
+  font-family:Red Hat Display;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(148, 1, 1);
+  border: none;
+  border-radius: 40px;
+  padding: 15px;
+
+   /* posição do botão */
+  position: absolute;
+  left: 380px;
+  top: 500px;
+  transition: transform 0.3s;
+}
+
+/* tira o aspecto de "link" do texto
+que está dentro do botão */
+.botao_cliqueaq a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* a seguir, as animações do botão "clique aqui" */
+.botao_cliqueaq:hover {
+    transform: scale(1.1);
+}
+
+.botao_cliqueaq:active {
+    animation: pulsar 0.
+}
+
+/* o texto "confira nosso cardapio" */
+.confira{
+  /* estilo do texto */
+  font-family:Red Hat Display;
+  font-size: 29px;
+  color: rgb(255, 255, 255);
+  
+   /* posição do texto */
+  position: absolute;
+  left: 290px;
+  top: 360px;
+  
+   /* tamanho do texto */
+  width: 420px;
+  height: 260px;
+}
+
+/* transição quando a página é carregada */
+@keyframes fadeSlide {
+    from {
+        opacity: 1;
+        transform: translateY(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.transicao {
+    animation: fadeSlide 1s ease-in-out forwards;
+    margin: 0;
+}
+
+ /* a parte vermelha do "nos conte sua experiencia" */
+ .partebaixo{
+    background-image: url(img/redbar.png);
+    background-repeat: no-repeat;
+     width: 100vw;
+     height: 75vh;
+    /*display: block;*/
+    background-size: auto;
+    /*position: absolute;*/
+    padding: 0;
+    /*background-color: aqua;*/
+ }
+
+ .experiencia{
+    position: relative;
+    left: 150px;
+    top: 60px;
+    width: auto;
+    height: 260px;
+}
+
+ .pizza3{
+    position: relative;
+    left: 250px;
+    top: 90px;
+    width: 350px;
+    height: 260px;
+ }
+
+ /* resolução do botão "cardápio" no menu */
+ .botaocardapio{
+    padding: 3px 1px;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    position: relative;
+    top: -85px;
+    left: 600px;
+}
+
+/* animação dos botões */
+.botaocardapio:hover {
+    transform: scale(1.1);
+}
+
+.botaocardapio:active {
+    animation: pulsar 0.
+}
+
+/* botão do cardápio */
+.botaocardapio {
+  background-color: #00ffa200;
+  color: white;
+  padding: 3px 1px;
+  font-size: 16px;
+  border: solid 1px;
+  border-radius: 20px;
+}
+
+/* posição do dropdown do botão cardápio */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+}
+
+/* conteudo do dropdown */
+.dropdownconteudo {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -45px;
+  left: 590px;
+  border-radius: 20px;
+}
+
+/* link dentro do dropdown */
+.dropdownconteudo a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* muda a cor do botão quando o cursor é passado por cima */
+.dropdownconteudo a:hover {
+    background-color: #dddddd00;
+    transform: scale(1.1);
+}
+
+/* mostra o dropdown quando o cursor é passado por cima  */
+.dropdown:hover .dropdownconteudo {
+    display: block;
+    animation: pulsar 0.;
+}
+/**-------------------------------------------------------------------------/
+/* muda o fundo do botão quando o mouse é passado por cima */
+.dropdown:hover .botaocardapio {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+.dropdown:hover .botaocardapio a{
+    color: rgb(148, 1, 1);
+}
+
+/* botão avaliar---------------------------------- */
+
+.botao_avaliar_posicao{
+    margin: 20px;
+    text-align: center;
+}
+
+.botao_avaliar{
+  /* estilo do botão */
+  font-family:Red Hat Display;
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(148, 1, 1);
+  border: none;
+  border-radius: 40px;
+  padding: 15px;
+
+   /* posição do botão */
+  transition: transform 0.3s;
+}
+
+/* tira o aspecto de "link" do texto
+que está dentro do botão */
+.botao_avaliar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* a seguir, as animações do botão "avaliar" */
+.botao_avaliar:hover {
+    transform: scale(1.1);
+}
+
+.botao_avaliar:active {
+    animation: pulsar 0.
+}
+
+/* a seguir, o rodapé da página */
+.rodape{
+    background-color: rgb(148, 1, 1);
+    color: #ffffff;
+    font-family:Red Hat Display;
+    /*position: absolute;*/
+    /*bottom: auto;*/
+    /*top: 216%;*/
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+}
+
+.rodape a{
+    text-decoration: none;
+}
+
+.rodape p{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sociais{
+    display: inline-block;
+    width: auto;
+    padding: 2px;
+    text-align: right;
+    right: 50px;
+    filter: invert(100%);
+}
+
+.botao4:hover {
+    transform: scale(1.1);
+}
+
+.botao4:active {
+    animation: pulsar 0.
+}
+
+/*adicionais agora*/
+
+.container_avaliacoes{
+    background-color: rgb(248, 246, 246);
+    padding: 10px 15px;
+    margin: 20px;
+    max-width: 20%;
+    border: solid 1px;
+    border-radius: 20px;
+    color: rgb(146, 146, 146);
+
+    display: inline-block;
+    justify-self: center;
+}
+
+.caixa_avaliacoes{
+    color: black;
+    font-family: Red Hat Display;
+}
+
+.caixa_avaliacoes .título{
+    font-size: 60%;
+    text-align: center;
+    
+}
+
+.caixa_avaliacoes .caixa_comentario{
+    font-size: 100%;
+    text-align: center;
+}
+
+.caixa_avaliacoes .usuario{
+    text-align: end;
+    font-size: 80%;
+    margin-right: 10%;
+    color: rgb(85, 86, 86);
+}
+
+.banner_exp{
+    display: absolute;
+    position: static;
+    margin: 0;
+    padding: 0;
+}
+
+.container_avaliacoes_posicao{
+    text-align: center;
+}
+
+/*acesso para adms*/
+.admlogin{
+  color: #ffffff;
+  text-align: right;
+  display: block;
+  margin-right: 3%;
+}
+
+
+/*---------------------------------------*/
+@media screen and (max-width: 768px) {
+body{
+  margin: auto;
+    overflow-x: hidden;
+}
+
+.menu{
+    background-size: auto;
+}
+    
+.partebaixo{
+     width: auto;
+     height: auto;
+    display: flex;
+    background-size: cover;
+    position: absolute;
+}
+
+.menu{
+    width: auto;
+}
+
+.menubotoes{
+    display: inline;
+    padding: 5px 3px;
+    position: auto;
+    top: -25px; 
+}
+
+/*.imagens, .letreiro{
+    width: 40%;
+    height: 30%;
+}*/
+
+/*.imagens, .pizza1,{
+    position: relative;
+    left: -180px;
+    top: -90px;
+    width: 440px;
+    height: 420px;
+}*/
+
+/*.imagens, .pizza2{
+    position: relative;
+    left: -180px;
+    top: -110px;
+    width: 440px;
+    height: 420px;
+}
+
+.imagens, .ingredientes{
+    position: relative;
+    left: -180px;
+    top: -110px;
+    width: 440px;
+    height: 420px;
+}*/
+
+.partebaixo{
+    background-image: url(img/redbar.png);
+    background-repeat: no-repeat;
+     width: 100vw;
+     height: auto;
+    display: flex;
+    background-size: 100vw;
+    position: absolute;
+ }
+
+}

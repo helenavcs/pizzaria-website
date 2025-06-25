@@ -1,0 +1,758 @@
+
+
+
+/* este arquivo css foi criado pensando na formatação das outras abas
+(exeto a "homepage") */
+
+
+body{
+    /* imagem de fundo do site */
+    background-image: url(img/background.png);
+
+    /* tamanho da imagem e repetição */
+    background-size: 30%;
+    background-repeat: repeat;
+
+    /* muda a margem da página */
+    margin: auto;
+    overflow-x: hidden;
+
+    display: block;
+}
+
+/* essa é a "parte de cima" da página, que está sendo
+delimitada pelo fundo de madeira. */
+.paginacima{
+    /* fundo de madeira */
+   /* background-color: blueviolet; */
+    background-image: url(img/woodbg.png);
+    color:aliceblue;
+    max-width: 100%;
+    height: auto;
+}
+
+/* o menu vermelho que fica no topo da página */
+.menu{
+    
+    /* bandeira vermelha do menu */
+    background-image: url(img/redheader.png);
+    
+    /* posição da bandeira */
+    background-size: auto;
+    display: flex;
+    z-index: 10;
+}
+
+/* estilo geral da div onde os botões estão */
+.menubotoes{
+
+    /* fonte dos botões */
+    font-family: Red Hat Display;
+   
+    /* decoração dos botões */
+    cursor: pointer;
+    
+    /* posição dos botões na barra de navegação */
+    display: inline-block, flex;
+    padding: 10px 30px;
+    position: relative;
+    top: -12px; /*ajusta a altura dos botões*/
+}
+
+/* "barra" de navegação, que na verdade é 
+para os botões ficarem na horizontal*/
+nav{
+    position: relative;
+    top: -25px;
+
+}
+
+/* "barra de navegação" e suas configurações */
+nav ul{
+    list-style: none;
+    position: relative;
+    top: -25px;
+}
+
+/* lista que forma os botões, para eles ficarem lado a lado na horizontal */
+nav ul li{
+    display: inline-block;
+    position: flex;
+    margin-right: 20px;
+}
+
+/* estilo do texto dos botões*/
+nav ul li a{
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    transition: 0.6s, transform 0.6s;
+}
+
+/* animação quando o mouse é passado sobre os botões */
+.nav ul li a:hover{
+    transform: scale(1.1);
+}
+
+/* botões da barra vermelha */
+.botao{
+    padding: 3px 1px;
+    border: solid 1px;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    position: relative;
+    top: -85px;
+    left: 600px;
+    color: white;
+}
+
+/* animação dos botões */
+.botao:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+
+.botao:hover a{
+   color: rgb(148, 1, 1); 
+}
+
+.botao:active {
+    animation: pulsar 0.
+}
+
+/* a seguir são todas as imagens posicionadas */
+.imagens{
+    display: block;
+    z-index: 0; /* faz com que as imagens fiquem lado a lado */
+}
+
+/* pizza da esquerda */
+.pizza1{
+    position: relative;
+    z-index: 0;
+    left: -180px;
+    top: -90px;
+    width: 440px;
+    height: 420px;
+}
+
+/* letreiro "pizzas a moda da casa" */
+.letreiro{
+  position: absolute;
+  left: 280px;
+  top: 140px;
+  width: 420px;
+  height: 260px;
+  z-index: 0;
+}
+
+/* ingredientes atrás da pizza da direita */
+.ingredientes{
+  position: absolute;
+  left: 1050px;
+  top: 130px;
+  width: 450px;
+  height: 530px;
+  z-index: 0;
+}
+
+/* pizza da direita */
+.pizza2{
+  position: fixed;
+  left: 820px;
+  top: 150px;
+  width: 470px;
+  height: 450px;
+  z-index: 0;
+}
+
+/* o botão "clique aqui" em vermelho */
+.botao2{
+  /* estilo do botão */
+  font-family:Red Hat Display;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(148, 1, 1);
+  border: none;
+  border-radius: 40px;
+  padding: 15px;
+
+   /* posição do botão */
+  position: absolute;
+  left: 380px;
+  top: 500px;
+}
+
+/* tira o aspecto de "link" do texto
+que está dentro do botão */
+.botao2 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* a seguir, as animações do botão "clique aqui" */
+.botao2:hover {
+    transform: scale(1.1);
+}
+
+.botao2:active {
+    animation: pulsar 0.
+}
+
+/* o texto "confira nosso cardapio" */
+.confira{
+  /* estilo do texto */
+  font-family:Red Hat Display;
+  font-size: 29px;
+  color: rgb(255, 255, 255);
+  
+   /* posição do texto */
+  position: absolute;
+  left: 290px;
+  top: 360px;
+  
+   /* tamanho do texto */
+  width: 420px;
+  height: 260px;
+}
+
+/* transição quando a página é carregada */
+@keyframes fadeSlide {
+    from {
+        opacity: 1;
+        transform: translateY(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.transicao {
+    animation: fadeSlide 1s ease-in-out forwards;
+    margin: 0;
+}
+
+ /* a parte vermelha do "nos conte sua experiencia" */
+ .partebaixo{
+    background-image: url(img/redbar.png);
+    background-repeat: no-repeat;
+     width: 100vw;
+     height: 100vh;
+    display: auto;
+    background-size: auto;
+    position: absolute;
+ }
+
+ .experiencia{
+    position: relative;
+    left: 150px;
+    top: 30px;
+    width: 590px;
+    height: 260px;
+}
+
+ .pizza3{
+    position: relative;
+    left: 250px;
+    top: 90px;
+    width: 350px;
+    height: 260px;
+ }
+
+ /*escrita "deixe sua avaliação"*/
+ .deixesuavaliacao{
+     position: relative;
+     left: 163px;
+     top: 275px;
+     width: 590px;
+     height: 260px;
+
+    font-family:Red Hat Display;
+    font-size: 29px;
+    color: rgb(255, 255, 255);
+ }
+
+ /* resolução do botão "cardápio" no menu */
+ .botaocardapio{
+    padding: 3px 1px;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    position: relative;
+    top: -85px;
+    left: 600px;
+}
+
+/* animação dos botões */
+.botaocardapio:hover {
+    transform: scale(1.1);
+}
+
+.botaocardapio:active {
+    animation: pulsar 0.
+}
+
+/* botão do cardápio */
+.botaocardapio {
+  background-color: #00ffa200;
+  color: white;
+  padding: 3px 1px;
+  font-size: 16px;
+  border: solid 1px;
+  border-radius: 20px;
+}
+
+/* posição do dropdown do botão cardápio */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+}
+
+/* conteudo do dropdown */
+.dropdownconteudo {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top: -45px;
+  left: 590px;
+  border-radius: 20px;
+}
+
+/* link dentro do dropdown */
+.dropdownconteudo a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* muda a cor do botão quando o cursor é passado por cima */
+.dropdownconteudo a:hover {
+    background-color: #dddddd00;
+    transform: scale(1.1);
+}
+
+/* mostra o dropdown quando o cursor é passado por cima  */
+.dropdown:hover .dropdownconteudo {
+    display: block;
+    animation: pulsar 0.;
+}
+/**-------------------------------------------------------------------------/
+/* muda o fundo do botão quando o mouse é passado por cima */
+.dropdown:hover .botaocardapio {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+.dropdown:hover .botaocardapio a{
+    color: rgb(148, 1, 1);
+}
+
+/* a seguir, o rodapé da página */
+.rodape{
+    background-color: rgb(148, 1, 1);
+    color: #ffffff;
+    font-family:Red Hat Display;
+    position: absolute;
+    bottom: auto;
+    top: auto;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+}
+
+.rodape a{
+    text-decoration: none;
+}
+
+.rodape p{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sociais{
+    display: inline-block;
+    width: auto;
+    padding: 2px;
+    text-align: right;
+    right: 50px;
+    filter: invert(100%);
+}
+
+.botao4:hover {
+    transform: scale(1.1);
+}
+
+.botao4:active {
+    animation: pulsar 0.
+}
+
+h1{
+    text-align: center;
+    font-family:Red Hat Display;
+}
+
+/* a seguir, o slideshow com as fotos da parte do cardápio */
+#slideshow {
+  text-align: center;
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: solid 3px;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background-image: url(cardapio_slide/1.jfif);
+  background-size: 728px 510px;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(2) {
+  background-image: url(cardapio_slide/2.jfif);
+  background-size: 728px 510px;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(3) {
+  background-image: url(cardapio_slide/3.jfif);
+  background-size: 728px 510px;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(4) {
+  background-image: url(cardapio_slide/4.jfif);
+  background-size: 728px 510px;
+  background-repeat: no-repeat;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+/*cardápio agora*/
+.menucardapio {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px;
+        }
+        .menu-item {
+            width: 200px; /* Ajuste conforme necessário */
+            text-align: center;
+            border: 1px solid #dddddd00;
+            background-color: #f3f3f3;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+        }
+        .menucardapio img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .nome {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-family:Red Hat Display;
+        }
+        .descrição {
+            font-style: none;
+            color: #555;
+            margin-top: 5px;
+            font-family:Red Hat Display;
+        }
+        .preço {
+            font-weight: bold;
+            color: #c00;
+            margin-top: 5px;
+            font-family:Red Hat Display;
+        }
+
+.pizzasletreiro {
+   margin-top: -3%;
+   font-size: 400%;
+   font-family:Red Hat Display;
+   font-weight: bold;
+   color: #c00;
+}
+
+.pizzasletreiro2 {
+   margin-top: -3%;
+   font-size: 400%;
+   font-family:Red Hat Display;
+   font-weight: bold;
+   color: rgb(255, 255, 255);
+}
+
+.paginacima{
+    /* fundo de madeira */
+    background-image: url(img/woodbg.png);
+    color:aliceblue;
+    max-width: 100%;
+    height: 900px;
+}
+
+
+/* a seguir, o slideshow com as fotos da sessão "sobre nós" */
+#slideshow2 {
+  text-align: center;
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+   margin: 0 auto;
+  border-radius: 20px;
+  border: solid 3px;
+  color: #c00;
+}
+
+.slide-wrapper2 {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide2 {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide2:nth-child(1) {
+  background-image: url(sobrenos_slide/1.jfif);
+  background-size: 728px 510px;
+  background-repeat: no-repeat;
+}
+
+.slide2:nth-child(2) {
+  background-image: url(sobrenos_slide/2.jfif);
+  background-size: 728px 510px;
+  background-repeat: no-repeat;
+}
+
+.slide2:nth-child(3) {
+  background-image: url(sobrenos_slide/3.jfif);
+  background-size: 728px 510px;
+  background-repeat: no-repeat;
+}
+
+.slide2:nth-child(4) {
+  background-image: url(cardapio_slide/3.jfif);
+  background-size: 728px 510px;
+  background-repeat: no-repeat;
+}
+
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+/* texto do resumo da sessão "sobre nós" */
+#resumo{
+    text-align: center;
+    font-family:Red Hat Display;
+    color: rgb(54, 54, 54);
+    font-size: 30px;
+    padding: 5%;
+}
+
+.final{
+    text-align: center;
+}
+
+
+/*popover das pizzas*/
+.popover {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    font-family: Red Hat Display;
+    text-align: center;
+}
+
+.popover h2{
+  color: #c00;
+}
+
+.popover h6{
+  font-style: italic;
+}
+
+.popover p{
+  color: #333;
+  font-size: 15px;
+}
+
+/* Quando o popover for alvo */
+:target {
+    display: block;
+}
+
+.close-btn {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    float: right;
+}
+
+.menucardapio a {
+ text-decoration: none;
+ color: rgb(0, 0, 0);
+}
+
+
+.container_avaliacoes{
+  background-color: rgb(248, 246, 246);
+  padding: 10px 15px;
+  margin: 20px;
+  max-width: 20%;
+  border: solid 1px;
+  border-radius: 20px;
+  color: rgb(146, 146, 146);
+
+  display: inline-block;
+  justify-self: center;
+}
+
+.caixa_avaliacoes{
+  color: black;
+  font-family: Red Hat Display;
+}
+
+.caixa_avaliacoes .título{
+  font-size: 60%;
+  text-align: center;
+  
+}
+
+.caixa_avaliacoes .caixa_comentario{
+  font-size: 100%;
+  text-align: center;
+}
+
+.caixa_avaliacoes .usuario{
+  text-align: end;
+  font-size: 80%;
+  margin-right: 10%;
+  color: rgb(85, 86, 86);
+}
+
+.banner_exp{
+  display: absolute;
+  position: static;
+  margin: 0;
+  padding: 0;
+}
+
+.container_avaliacoes_posicao{
+  text-align: center;
+}
+
+/*pagina de login*/
+
+.container-login{
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.login-info{
+  background-color: rgb(248, 246, 246);
+  padding: 35px 30px;
+  margin: 20px;
+  max-width: 20%;
+  border: solid 1px;
+  border-radius: 20px;
+  color: rgb(209, 209, 209);
+  box-shadow: 10px 10px 10px rgba(1,1,0,0.1);
+
+  display: inline-block;
+  justify-self: center;
+  text-align: left;
+}
+
+.login-info .nome{
+  border-radius: 10px;
+  border: solid 1px;
+  color: #b3b3b3;
+  padding: 7px 7px;
+}
+
+.login-info .senha{
+  border-radius: 10px;
+  border: solid 1px;
+  color: #b3b3b3;
+  padding: 13px 13px;
+  width: 87%;
+}
+
+.login-info button{
+  font-family:Red Hat Display;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(148, 1, 1);
+  border: none;
+  border-radius: 20px;
+  padding: 9px;
+}
+
+.botao-entrar{
+  text-align: center;
+  margin-top: 20%;
+}
+
+.campo-nome p{
+  color: #000000;
+  font-family: Red Hat Display;
+}
+
+.campo-senha p{
+  color: #000000;
+  font-family: Red Hat Display;
+}
+
+.admlogin{
+  color: #ffffff;
+  text-align: right;
+  display: block;
+  margin-right: 3%;
+}
