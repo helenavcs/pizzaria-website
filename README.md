@@ -5,7 +5,7 @@
 
 # Kairós Pizzaria
 
-Website criado para fins didáticos.
+Website criado sob fins didáticos.
 Direcionado ao estabelecimento Kairós Pizzaria, busca atender as necessidades digitais dos consumidores e funcionários.
 
 
